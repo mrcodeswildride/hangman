@@ -80,7 +80,7 @@ input {
 }
 
 .guessed {
-  opacity: 0.25;
+  opacity: 25%;
 }
 
 .guessed:hover {
