@@ -65,25 +65,25 @@ input {
 .letter {
   display: inline-block;
   width: 48px;
-  height: 41px;
+  height: 48px;
   background-color: white;
   border: 1px solid black;
   font-size: 30px;
   text-align: center;
-  padding-top: 7px;
+  line-height: 48px;
+  cursor: pointer;
   user-select: none;
 }
 
 .letter:hover {
   background-color: lightblue;
-  cursor: pointer;
 }
 
 .guessed {
   opacity: 25%;
+  cursor: not-allowed;
 }
 
 .guessed:hover {
   background-color: white;
-  cursor: not-allowed;
 }
