@@ -30,7 +30,7 @@ input {
   width: 150px;
   height: 186px;
   background-image: url("stages/0.png");
-  margin-right: 54px;
+  margin-right: 55px;
 }
 
 #messageParagraph {
@@ -38,6 +38,7 @@ input {
 }
 
 #blankSection {
+  display: none;
   margin-bottom: 15px;
 }
 
@@ -59,7 +60,9 @@ input {
 }
 
 #letterSection {
+  display: none;
   width: 650px;
+  font-size: 0;
 }
 
 .letter {
@@ -68,7 +71,7 @@ input {
   height: 48px;
   background-color: white;
   border: 1px solid black;
-  font-size: 30px;
+  font-size: 24px;
   text-align: center;
   line-height: 48px;
   cursor: pointer;
