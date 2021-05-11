@@ -1,68 +1,64 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="stages/0.png" rel="prefetch" />
+    <link href="stages/1.png" rel="prefetch" />
+    <link href="stages/2.png" rel="prefetch" />
+    <link href="stages/3.png" rel="prefetch" />
+    <link href="stages/4.png" rel="prefetch" />
+    <link href="stages/5.png" rel="prefetch" />
+    <link href="stages/6.png" rel="prefetch" />
+    <link href="stages/7.png" rel="prefetch" />
+    <script src="script.js" defer></script>
+  </head>
 
-<head>
-	<title>Hangman</title>
-	<meta name="viewport" content="width=device-width, initial-scale=0.5">
-	<link href="style.css" rel="stylesheet">
-	<link href="stages/0.png" rel="prefetch">
-	<link href="stages/1.png" rel="prefetch">
-	<link href="stages/2.png" rel="prefetch">
-	<link href="stages/3.png" rel="prefetch">
-	<link href="stages/4.png" rel="prefetch">
-	<link href="stages/5.png" rel="prefetch">
-	<link href="stages/6.png" rel="prefetch">
-	<link href="stages/7.png" rel="prefetch">
-	<script src="script.js" defer>
+  <body>
+    <h1>Hangman</h1>
 
-	</script>
-</head>
+    <div id="submitSection">
+      <input type="text" placeholder="word" autocomplete="off" id="wordInput" />
+      <button id="submitButton">Submit</button>
+      <button id="randomButton">Random word</button>
+      <p id="submitParagraph"></p>
+    </div>
 
-<body>
-	<h1>Hangman</h1>
+    <div id="imageSection">
+      <div id="image"></div>
+      <p id="messageParagraph"></p>
+    </div>
 
-	<div id="submitSection">
-		<input type="text" placeholder="word" id="wordInput">
-    <button id="submitButton">Submit</button>
-    <button id="randomButton">Random word</button>
-    <p id="submitParagraph"></p>
-  </div>
+    <div id="blankSection"></div>
 
-  <div id="imageSection">
-    <div id="image"></div>
-    <div id="messageParagraph"></div>
-  </div>
-
-  <div id="blankSection"></div>
-
-  <div id="letterSection">
-    <div class="letter">A</div>
-    <div class="letter">B</div>
-    <div class="letter">C</div>
-    <div class="letter">D</div>
-    <div class="letter">E</div>
-    <div class="letter">F</div>
-    <div class="letter">G</div>
-    <div class="letter">H</div>
-    <div class="letter">I</div>
-    <div class="letter">J</div>
-    <div class="letter">K</div>
-    <div class="letter">L</div>
-    <div class="letter">M</div>
-    <div class="letter">N</div>
-    <div class="letter">O</div>
-    <div class="letter">P</div>
-    <div class="letter">Q</div>
-    <div class="letter">R</div>
-    <div class="letter">S</div>
-    <div class="letter">T</div>
-    <div class="letter">U</div>
-    <div class="letter">V</div>
-    <div class="letter">W</div>
-    <div class="letter">X</div>
-    <div class="letter">Y</div>
-    <div class="letter">Z</div>
-  </div>
-</body>
-
+    <div id="letterSection">
+      <div class="letter">A</div>
+      <div class="letter">B</div>
+      <div class="letter">C</div>
+      <div class="letter">D</div>
+      <div class="letter">E</div>
+      <div class="letter">F</div>
+      <div class="letter">G</div>
+      <div class="letter">H</div>
+      <div class="letter">I</div>
+      <div class="letter">J</div>
+      <div class="letter">K</div>
+      <div class="letter">L</div>
+      <div class="letter">M</div>
+      <div class="letter">N</div>
+      <div class="letter">O</div>
+      <div class="letter">P</div>
+      <div class="letter">Q</div>
+      <div class="letter">R</div>
+      <div class="letter">S</div>
+      <div class="letter">T</div>
+      <div class="letter">U</div>
+      <div class="letter">V</div>
+      <div class="letter">W</div>
+      <div class="letter">X</div>
+      <div class="letter">Y</div>
+      <div class="letter">Z</div>
+    </div>
+  </body>
 </html>

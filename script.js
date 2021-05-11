@@ -1,4 +1,25 @@
-let dictionary = [`code`, `element`, `tag`, `attribute`, `style`, `selector`, `number`, `string`, `variable`, `event`, `function`, `condition`, `logic`, `increment`, `true`, `false`, `array`, `index`, `loop`, `parameter`]
+let dictionary = [
+  `code`,
+  `element`,
+  `tag`,
+  `attribute`,
+  `style`,
+  `selector`,
+  `number`,
+  `string`,
+  `variable`,
+  `event`,
+  `function`,
+  `increment`,
+  `condition`,
+  `logic`,
+  `true`,
+  `false`,
+  `array`,
+  `index`,
+  `loop`,
+  `parameter`,
+]
 
 let submitSection = document.getElementById(`submitSection`)
 let wordInput = document.getElementById(`wordInput`)
@@ -22,13 +43,14 @@ for (let letter of letters) {
   letter.addEventListener(`click`, guessLetter)
 }
 
+wordInput.focus()
+
 function submitWord() {
   word = wordInput.value.trim().toUpperCase()
 
   if (word == ``) {
-    submitParagraph.innerHTML = `Please type a word.`
-  }
-  else {
+    submitParagraph.innerHTML = `Type a word.`
+  } else {
     startGame()
   }
 }
@@ -68,8 +90,7 @@ function guessLetter() {
 
     if (numRight == 0) {
       badGuess()
-    }
-    else {
+    } else {
       goodGuess()
     }
   }

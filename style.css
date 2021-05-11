@@ -61,7 +61,7 @@ input {
 
 #letterSection {
   display: none;
-  width: 650px;
+  max-width: 650px;
   font-size: 0;
 }
 
